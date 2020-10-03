@@ -73,3 +73,32 @@ header a {
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid transparent;
 }
+
+.second-block {
+  color: #4b4a4a;
+}
+
+.container-second {
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+.second-title {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.second-text {
+  font-size: 14px;
+  line-height: 25px;
+  margin: 20px 0;
+}
+
+.second-img {
+  width: 178px;
+  height: 32px;
+  background: url(../img/bg-bricks.jpg) no-repeat;
+  background-size: cover;
+  margin: 60px 5px 0 40px;
+}
