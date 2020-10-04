@@ -204,3 +204,11 @@ header a {
   height: 10px;
   background: url(../img/bg-bricks.jpg);
 }
+footer a{
+  color: #595959;
+}
+.container-footer{
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+}
