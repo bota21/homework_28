@@ -102,54 +102,105 @@ header a {
   background-size: cover;
   margin: 60px 5px 0 40px;
 }
-.container-third{
+
+.container-third {
   background: #2D5F3A;
   /* padding: 40px 70px; */
   /* box-sizing: border-box; */
   display: flex;
 }
-.first-wrapper, .second-wrapper, .third-wrapper{
+
+.first-wrapper, .second-wrapper, .third-wrapper {
   padding: 40px;
 }
-.second-wrapper{
+
+.second-wrapper {
   background: #F74C55;
 }
-.third-logo{
+
+.third-logo {
   display: flex;
   align-items: center;
 }
-.first-third-logo{
+
+.first-third-logo {
   width: 28px;
   height: 34px;
   background: url(../img/ic-stat.png) no-repeat;
 }
-.third-title{
+
+.third-title {
   margin-left: 25px;
 }
-.third-text{
+
+.third-text {
   line-height: 25px;
   font-size: 14px;
   padding: 10px 0;
 }
-.second-third-logo{
+
+.second-third-logo {
   width: 36px;
   height: 36px;
   background: url(../img/ic-screen.png) no-repeat;
 }
-.third-third-logo{
+
+.third-third-logo {
   width: 39px;
   height: 27px;
   background: url(../img/ic-cloud.png) no-repeat;
 }
-.plus{
+
+.plus {
   font-size: 42px;
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
-  
 }
-.plus-one{
-  background: rgba(0,0,0,0.5);
+
+.plus-one {
+  background: rgba(0, 0, 0, 0.5);
   padding: 0px 8px;
   color: #fff;
+}
+
+.container-forth {
+  height: 499px;
+  background: url(../img/bg-nature.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.forth-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 13%;
+}
+
+.forth-title {
+  font-size: 50px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.forth-button {
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.forth-button a {
+  color: #fff;
+  font-size: 30px;
+}
+
+.band {
+  height: 10px;
+  background: url(../img/bg-bricks.jpg);
 }
