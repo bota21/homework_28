@@ -118,7 +118,7 @@ header a {
   background: #F74C55;
 }
 
-.third-logo {
+.first-wrapper-logo, .second-wrapper-logo, .third-wrapper-logo {
   display: flex;
   align-items: center;
 }
@@ -126,10 +126,9 @@ header a {
 .first-third-logo {
   width: 28px;
   height: 34px;
-  background: url(../img/ic-stat.png) no-repeat;
 }
 
-.third-title {
+.first-third-title, .second-third-title, .third-third-title {
   margin-left: 25px;
 }
 
@@ -142,26 +141,23 @@ header a {
 .second-third-logo {
   width: 36px;
   height: 36px;
-  background: url(../img/ic-screen.png) no-repeat;
 }
 
 .third-third-logo {
   width: 39px;
   height: 27px;
-  background: url(../img/ic-cloud.png) no-repeat;
 }
 
 .plus {
-  font-size: 42px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .plus-one {
   background: rgba(0, 0, 0, 0.5);
-  padding: 0px 8px;
+  padding: 0px 10px;
   color: #fff;
+  font-size: 42px;
+  margin-left: 80%;
 }
 
 .container-forth {
@@ -204,10 +200,12 @@ header a {
   height: 10px;
   background: url(../img/bg-bricks.jpg);
 }
-footer a{
+
+footer a {
   color: #595959;
 }
-.container-footer{
+
+.container-footer {
   display: flex;
   justify-content: center;
   padding: 35px;
