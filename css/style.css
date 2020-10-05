@@ -9,12 +9,12 @@ body {
 }
 
 .container-header {
-  height: 400px;
+  min-height: 400px;
   background: url(../img/bg-circles-full.jpg) 50% no-repeat;
   background-size: cover;
 }
 
-header a {
+.header a {
   color: #fff
 }
 
@@ -105,8 +105,6 @@ header a {
 
 .container-third {
   background: #2D5F3A;
-  /* padding: 40px 70px; */
-  /* box-sizing: border-box; */
   display: flex;
 }
 
@@ -161,7 +159,7 @@ header a {
 }
 
 .container-forth {
-  height: 499px;
+  min-height: 499px;
   background: url(../img/bg-nature.jpg) no-repeat;
   background-size: cover;
   display: flex;
