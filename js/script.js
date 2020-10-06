@@ -1,37 +1,20 @@
 $(() => {
-  $('<section>').appendTo('.container-third').addClass('first-wrapper');
-  $('<div>').appendTo('.first-wrapper').addClass('first-wrapper-logo');
-  $('<div>').appendTo('.first-wrapper-logo')
-  .addClass('first-third-logo')
-  .css({ 'background-image': "url('../homework/img/ic-stat.png')" });
-  $('<h2>').appendTo('.first-wrapper-logo').addClass('first-third-title')
-  .text('Seo Optimized');
-  $('<p>').appendTo('.first-wrapper').addClass('third-text');
-  $('<div>').appendTo('.first-wrapper').addClass('plus');
-  $("<a href='#'>").appendTo('.first-wrapper').addClass('plus-one').text('+');
+  let addWrapper = (classWrapper, classLogo, title, text) => {
+    $('<section>').appendTo('.third-block .container')
+      .addClass(classWrapper).addClass('wrapper').html(`
+    <div class="third-logo">
+          <div class="${classLogo}"></div>
+          <h2 class="third-title">${title}</h2>
+        </div>
+        <div class="third-text">${text}</div>
+        <div class="plus"><a href="#" class="plus-one">+</a></div>
+    `)
+  };
 
-  $('<section>').appendTo('.container-third').addClass('second-wrapper');
-  $('<div>').appendTo('.second-wrapper').addClass('second-wrapper-logo');
-  $('<div>').appendTo('.second-wrapper-logo')
-  .addClass('second-third-logo')
-  .css({ 'background-image': "url('../homework/img/ic-screen.png')" });
-  $('<h2>').appendTo('.second-wrapper-logo').addClass('second-third-title')
-  .text('Responsive');
-  $('<div>').appendTo('.second-wrapper').addClass('third-text');
-  $('<div>').appendTo('.second-wrapper').addClass('plus');
-  $("<a href='#'>").appendTo('.second-wrapper').addClass('plus-one').text('+')
+  let text = `Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and scrambled it to make`;
 
-  $('<section>').appendTo('.container-third').addClass('third-wrapper');
-  $('<div>').appendTo('.third-wrapper').addClass('third-wrapper-logo');
-  $('<div>').appendTo('.third-wrapper-logo')
-  .addClass('third-third-logo')
-  .css({ 'background-image': "url('../homework/img/ic-cloud.png')" });
-  $('<h2>').appendTo('.third-wrapper-logo').addClass('third-third-title').
-    text('Cloud Services');
-  $('<p>').appendTo('.third-wrapper').addClass('third-text');
-  $('<div>').appendTo('.third-wrapper').addClass('plus');
-  $("<a href='#'>").appendTo('.third-wrapper').addClass('plus-one').text('+');
-
-  $('.third-text').text("Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of the type and scrambled it to make");
+  addWrapper('third-wrapper', 'first-third-logo', 'Seo Optimized', text);
+  addWrapper('second-wrapper', 'second-third-logo', 'Responsive', text);
+  addWrapper('third-wrapper', 'third-third-logo', 'Cloud Services', text)
 });
 
